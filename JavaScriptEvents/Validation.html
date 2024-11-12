@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="errorMessage" style="color:red;"></p>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            const nameInput = document.getElementById("name").value;
+            if (nameInput.trim() === "") {
+                document.getElementById("errorMessage").innerText = "Name field cannot be empty!";
+                event.preventDefault(); // Prevent form submission if empty
+            }
+        });
+    </script>
+
+</body>
+</html>

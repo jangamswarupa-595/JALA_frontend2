@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow with Scroll</title>
+    <style>
+        .scroll-box {
+            width: 300px;
+            height: 150px;
+            overflow: auto; /* Adds scrollbars if content exceeds box size */
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .content {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-box">
+    <div class="content">
+        <p>This is some content inside a scrollable box. The box has a fixed height, and any extra content will cause the scrollbar to appear. Scroll down to see the rest of the content.</p>
+    </div>
+</div>
+
+</body>
+</html>
+

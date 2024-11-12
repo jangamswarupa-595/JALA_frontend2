@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & Pagination</title>
+    <style>
+        /* Animation Example */
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        .animated-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            animation: slideIn 2s ease-in-out 1s forwards;
+        }
+
+        /* Pagination Styles */
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="animated-box"></div>
+
+<h2>Pagination Example:</h2>
+<div class="pagination">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+</div>
+
+</body>
+</html>

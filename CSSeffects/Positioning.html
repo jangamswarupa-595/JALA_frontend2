@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        .static-position {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .relative-position {
+            position: relative;
+            background-color: lightgreen;
+            padding: 10px;
+            left: 50px;
+        }
+
+        .absolute-position {
+            position: absolute;
+            background-color: lightcoral;
+            padding: 10px;
+            top: 50px;
+            right: 30px;
+        }
+
+        .fixed-position {
+            position: fixed;
+            background-color: lightyellow;
+            padding: 10px;
+            top: 10px;
+            left: 10px;
+        }
+
+        .sticky-position {
+            position: sticky;
+            top: 0;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="static-position">Static Position</div>
+<div class="relative-position">Relative Position (Moved 50px to the right)</div>
+<div class="absolute-position">Absolute Position (50px from top and 30px from right)</div>
+<div class="fixed-position">Fixed Position (Always stays at top-left corner)</div>
+<div class="sticky-position">Sticky Position (Sticky at top when scrolling)</div>
+
+</body>
+</html>

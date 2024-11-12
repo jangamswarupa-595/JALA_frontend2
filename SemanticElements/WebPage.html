@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        article {
+            background-color: #e0f7fa;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffeb3b;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #8bc34a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+
+        figure {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My HTML5 Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Services</a> | 
+        <a href="#">Contact</a>
+    </nav>
+
+    <article>
+        <header>
+            <hgroup>
+                <h2>Article Heading</h2>
+                <h3>Subtitle of the Article</h3>
+            </hgroup>
+            <p>Published on: <time datetime="2024-11-12">November 12, 2024</time></p>
+        </header>
+
+        <section>
+            <p>This is a section inside the article. <mark>Highlighted content</mark> within the article section.</p>
+        </section>
+
+        <aside>
+            <h4>Related Information</h4>
+            <p>This is some additional content, such as a sidebar or related links.</p>
+        </aside>
+
+        <footer>
+            <p>Article Footer - Author: John Doe</p>
+        </footer>
+    </article>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+</body>
+</html>

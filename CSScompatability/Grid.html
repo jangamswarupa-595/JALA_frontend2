@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        /* Simple grid layout */
+        .grid-simple {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        /* Grid with different column sizes */
+        .grid-different {
+            display: grid;
+            grid-template-columns: 200px 1fr 2fr;
+            gap: 10px;
+        }
+
+        /* Grid with rows */
+        .grid-rows {
+            display: grid;
+            grid-template-rows: 100px auto 200px;
+            gap: 10px;
+        }
+
+        /* Grid with defined areas */
+        .grid-areas {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "main main sidebar"
+                "footer footer footer";
+            gap: 10px;
+        }
+
+        .grid-areas div {
+            padding: 20px;
+            background-color: lightblue;
+            border: 1px solid #000;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Simple Grid Layout</h2>
+    <div class="grid-simple">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <h2>Grid with Different Column Sizes</h2>
+    <div class="grid-different">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <h2>Grid with Rows</h2>
+    <div class="grid-rows">
+        <div>Row 1</div>
+        <div>Row 2</div>
+        <div>Row 3</div>
+    </div>
+
+    <h2>Grid with Defined Areas</h2>
+    <div class="grid-areas">
+        <div class="header">Header</div>
+        <div class="main">Main Content</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

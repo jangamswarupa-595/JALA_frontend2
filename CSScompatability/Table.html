@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout Example</title>
+    <style>
+        /* Table with fixed layout */
+        .fixed-layout {
+            table-layout: fixed;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .fixed-layout td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Table with automatic layout (default) */
+        .none-layout {
+            table-layout: auto;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .none-layout td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table with Fixed Layout</h2>
+    <table class="fixed-layout">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+        </tr>
+    </table>
+
+    <h2>Table with Default Layout</h2>
+    <table class="none-layout">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+        </tr>
+    </table>
+
+</body>
+</html>
